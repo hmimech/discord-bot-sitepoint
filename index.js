@@ -1,7 +1,7 @@
 require('dotenv').config();
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const TOKEN = process.env.TOKEN;
+const TOKEN = 'Nzk5NzU0OTMyODI3MzI0NDQ2.YAIL0g.C54S93okytsEzSAWcMlhAdriAH0';
 
 bot.login(TOKEN);
 
@@ -10,9 +10,9 @@ bot.on('ready', () => {
 });
 
 bot.on('message', msg => {
-  if (msg.content === 'ping') {
+  if (msg.content === 'chkoun?') {
     msg.reply('pong');
-    msg.channel.send('pong');
+    msg.channel.send('dir akha lhebs');
 
   } else if (msg.content.startsWith('!kick')) {
     if (msg.mentions.users.size) {
